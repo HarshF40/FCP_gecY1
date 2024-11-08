@@ -17,5 +17,7 @@ loop:
         goto loop;
     }
 
+    printf("\n");
+
     return 0;
 }

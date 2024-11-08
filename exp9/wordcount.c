@@ -10,6 +10,6 @@ int main(){
       count++;
     }
   }
-  printf("\nWord Count: %d",count);
+  printf("\nWord Count: %d\n",count);
   return 0;
 }
