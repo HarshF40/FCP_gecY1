@@ -8,7 +8,6 @@ typedef struct {
     unsigned int yoj;
 } student;
 
-// Declare the function prototype only once before main
 void list(student ptr[5], unsigned int yoj);
 
 int main() {
@@ -17,13 +16,13 @@ int main() {
 
     for (int i = 0; i < 5; i++) {
         printf("\nEnter Name: ");
-        scanf("%19s", arr[i].name); // Limit input to 19 characters
+        scanf("%19s", arr[i].name); 
         printf("Enter Roll No.: ");
         scanf("%d", &arr[i].roll_no);
         printf("Enter Department: ");
-        scanf("%19s", arr[i].department); // Limit input to 19 characters
+        scanf("%19s", arr[i].department); 
         printf("Enter Course: ");
-        scanf("%19s", arr[i].course); // Limit input to 19 characters
+        scanf("%19s", arr[i].course);
         printf("Enter Year of Joining: ");
         scanf("%u", &arr[i].yoj);
     }
@@ -37,7 +36,6 @@ int main() {
     return 0;
 }
 
-// Define the function only once
 void list(student ptr[5], unsigned int yoj) {
     int found = 0;
     for (int i = 0; i < 5; i++) {
